@@ -1,0 +1,187 @@
+@font-face {
+	font-family: "dancing script";
+	src: url("letras/DancingScript-Regular.ttf");}
+
+*
+{
+	margin:0;
+}
+
+body{
+	background: black;}
+
+#wrapper
+{
+	width: 960px;
+	margin: 0 auto;
+}
+/* cabecera y menu // paisajes.html // retratos.html*/
+header {
+	text-shadow: 2px 2px 2px #02010a;
+	border-radius: 10px 10px 0px 0px;
+	background: #5b7989;
+	margin: 0 auto;
+	height: 0 auto;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	color:white;}
+.titulos ul {
+	  display: flex;
+	  justify-content: center;
+	  flex-wrap: wrap;
+	  list-style-type: none;
+	  padding: 0;}
+.titulos ul:not(:last-child) { margin-right: 10px;}
+
+article {
+				box-sizing: border-box;
+				float:left;
+				height: 100%;
+				padding: 2%;
+				text-align: center;
+				height: 0 auto;}
+
+a { color: black;}
+
+.menu1, .menu2, .menu3 { color: white;}
+
+a:link { color: white;
+    background-color: transparent;
+    text-decoration: none;}
+
+a:active { color: black;
+    background-color: transparent;
+    text-decoration: underline;}
+
+a:hover { color: black;
+		    background-color: transparent;
+		    text-decoration: underline;}
+
+a:active { color: white;
+				    background-color: transparent;
+				    text-decoration: underline;}
+
+img { box-shadow: 2px 2px 0 #02010a;}
+
+div { text-align: center; }
+div table { text-align: left;;
+			margin: auto; }
+
+
+#columna1 {
+	background-color: #82c3a6;
+	width: 100%;}
+#columna2 {
+	background-color: #d5c75f;
+	border: 1px;
+	width: 50%;}
+#columna3 {
+	background-color: #d5c75f;
+	width: 50%;}
+#columna22 {
+		background-color: #d5c75f;
+		width: 100%;}
+
+	/*pie de pahina*/
+#columna4 {
+	background-color: #c6d5c5;
+	border-radius: 0px 0px 10px 10px;
+	width: 100%;}
+.pie {
+	text-align: left;}
+
+/*efectos en las imagenes ecundarias e hipervinculos*/
+#imagen2{
+		transform: 1s;
+		-webkit-transform: 1s; 	/*crhome 10+ safari */
+		-moz-transform: 1s;			/*firefox */
+		-ms-transform: 1s;}			/*internet explorer*/
+#imagen2:hover{
+	transform: rotate(10deg);
+	-webkit-transform: rotate(10deg);	/*crhome 10+ safari */
+	-moz-transform: rotate(10deg);		/*firefox */
+	-ms-transform: rotate(10deg);}		/*internet explorer*/
+#imagen3{
+		transform: 1s;
+		-webkit-transform: 1s;		/*crhome 10+ safari */
+		-moz-transform: 1s;				/*firefox */
+		-ms-transform: 1s;}				/*internet explorer*/
+#imagen3:hover{
+	transform: translate(20px,-5px);
+	-webkit-transform: translate(20px,-5px);	/*crhome 10+ safari */
+	-moz-transform: translate(20px,-5px);			/*firefox */
+	-ms-transform: translate(20px,-5px);}			/*internet explorer*/
+#imagen21 {
+		filter: blur(10px);
+		-webkit-filter: blur(10px);		/*crhome 10+ safari */
+		-moz-filter: blur(10px);			/*firefox */
+		-ms-filter: blur(10px);}			/*internet explorer*/
+#imagen22, #imagen24, #imagen26{
+		filter: grayscale(100%);
+		-webkit-filter: grayscale(100%);	/*crhome 10+ safari */
+		-moz-filter: grayscale(100%);			/*firefox */
+		-ms-filter: grayscale(100%);}			/*internet explorer*/
+#imagen23 {
+		filter: sepia(90%);
+		-webkit-filter: sepia(90%);		/*crhome 10+ safari */
+		-moz-filter: sepia(90%);			/*firefox */
+		-ms-filter: sepia(90%);}			/*internet explorer*/
+
+@media screen and (max-width: 960px){
+#wrapper {
+		width: 90%;
+		margin: 0 auto;}}
+
+@media screen and (max-width: 640px){
+#wrapper{
+		width: 100%;
+		margin: 0 auto;}
+	table {
+					width:100%;}
+	thead {
+				   display: none;}
+	tr:nth-of-type(2n) {
+				    background-color: inherit;}
+	tr td:first-child {
+				     background: #f0f0f0;
+				     font-weight:bold;
+				     font-size:1.3em;}
+	tbody td {
+				    display: block;
+				    text-align:center;}
+	tbody td:before {
+				       content: attr(data-th);
+				       display: block;
+				       text-align:center;}}
+
+@media screen and (max-width: 480px){
+#wrapper {
+		width: 100%;
+		margin: 0 auto;}
+#columna1 {
+	width: 100%;}
+#columna2 {
+	width: 100%;}
+#columna22 {
+		width: 100%;}
+#columna3 {
+	width: 100%;}
+table {
+					width:100%;}
+	thead {
+				   display: none;}
+	tr:nth-of-type(2n) {
+				    background-color: inherit;}
+	tr td:first-child {
+				     background: #f0f0f0;
+				     font-weight:bold;
+				     font-size:1.3em;}
+	tbody td {
+				    display: block;
+				    text-align:center;}
+	tbody td:before {
+				       content: attr(data-th);
+				       display: block;
+				       text-align:center;}
+header {
+	width:100%;}}
